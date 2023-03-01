@@ -1,0 +1,728 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Documentação 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Documentação} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se neste capítulo a documentação de uso do software Análise do
+ Efeito de Película a partir de Curvas de Índice de Produtividade (IPR)
+ para Poços Verticais em Escoamento Monofásico de Óleo.
+\end_layout
+
+\begin_layout Section
+Documentação do usuário
+\end_layout
+
+\begin_layout Standard
+A seguir encontra-se o manual do usuário, um guia que explica, passo a passo
+ a forma de instalação e uso do software desenvolvido.
+\end_layout
+
+\begin_layout Subsection
+Como rodar o software
+\end_layout
+
+\begin_layout Standard
+Compile o programa e, depois, execute-o.
+ Logo após esta etapa, siga os seguintes passos:
+\end_layout
+
+\begin_layout Enumerate
+No menu inicial escolha uma das opções abaixo:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) Opção 1 - Entrada de dados pelo teclado
+\end_layout
+
+\begin_layout Standard
+(b) Opção 2 - Entrada de dados por um arquivo de disco
+\end_layout
+
+\begin_layout Standard
+(c) Opção 3 - Visualizar um arquivo de disco
+\end_layout
+
+\begin_layout Standard
+(d) Opção 4 - Salvar dados em arquivo de disco
+\end_layout
+
+\begin_layout Standard
+(e) Opção 5 - Plotar curvas de IPR a partir de dados gerados pelo programa
+\end_layout
+
+\begin_layout Standard
+(f) Opção 6 - Plotar curvas de IPR a partir de um arquivo de disco
+\end_layout
+
+\begin_layout Standard
+(g) Opção 7 - Salvar gráfico
+\end_layout
+
+\begin_layout Standard
+(h) Opção 8 - Informações sobre o programa
+\end_layout
+
+\begin_layout Standard
+(i) Opção 9 - Sair do programa
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Caso o usuário opte pela entrada de dados pelo teclado ou por um arquivo
+ de disco (opção 1 ou 2), o programa mostrará um segundo menu onde o usuário
+ deverá escolher o regime do reservatório ou a opção de voltar para o menu
+ inicial listados da seguinte forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opção 1 - Regime Transiente
+\end_layout
+
+\begin_layout Enumerate
+Opção 2 - Regime Pseudopermanente
+\end_layout
+
+\begin_layout Enumerate
+Opção 3 - Regime Permanente
+\end_layout
+
+\begin_layout Enumerate
+Opção 4 - Voltar
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Obs.: Após a escolha do regime do reservatório, se o usuário optou pela entrada
+ de dados pelo teclado, o programa executará o menu de preenchimento pelo
+ teclado e as instruções para a ordem de entrada serão dadas.
+ Caso escolha a entrada de dados por arquivo de disco, o programa irá perguntar
+ o nome do arquivo onde os dados estão salvos.
+ O nome do arquivo de disco deve possuir extensão 
+\shape italic
+.dat
+\shape default
+ e ser digitado sem o formato de extensão (Exemplo: se o nome do arquivo
+ for 
+\shape italic
+dadosEntrada.dat
+\shape default
+, o usuário deve digitar apenas 
+\shape italic
+dadosEntrada
+\shape default
+).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Caso o usuário opte por visualizar um arquivo de disco (opção 3), o programa
+ irá perguntar o nome do arquivo onde os dados estão salvos.
+ O nome do arquivo de disco deve possuir extensão 
+\shape italic
+.dat
+\shape default
+ e ser digitado sem o formato de extensão (Exemplo: se o nome do arquivo
+ for 
+\shape italic
+dadosIPR.dat
+\shape default
+, o usuário deve digitar apenas 
+\shape italic
+dadosIPR
+\shape default
+).
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por salvar um arquivo de disco (opção 4), o programa
+ irá perguntar o nome do arquivo a ser salvo.
+ O nome do arquivo de disco possuirá extensão 
+\shape italic
+.dat
+\shape default
+ e deverá ser digitado sem o formato de extensão (Exemplo: se o nome do
+ arquivo for 
+\shape italic
+dadosIPR.dat
+\shape default
+, o usuário deve digitar apenas 
+\shape italic
+dadosIPR
+\shape default
+).
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por plotar curvas de IPR a partir de dados gerados pelo
+ software (opção 5), o programa irá automaticamente plotar o último conjunto
+ de dados calculados: pressão, vazão com skin e vazão sem skin.
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por plotar curvas de IPR a partir de um arquivo de disco
+ (opção 6), o programa irá perguntar o nome do arquivo onde os dados estão
+ salvos.
+ O nome do arquivo de disco deve possuir extensão 
+\shape italic
+.dat
+\shape default
+ e ser digitado sem o formato de extensão (Exemplo: se o nome do arquivo
+ for 
+\shape italic
+dadosIPR.dat
+\shape default
+, o usuário deve digitar apenas 
+\shape italic
+dadosIPR
+\shape default
+).
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por salvar um gráfico (opção 7), o programa irá perguntar
+ o nome do arquivo a ser salvo.
+ O nome do arquivo possuirá extensão 
+\shape italic
+.png
+\shape default
+ e deverá ser digitado sem o formato de extensão (Exemplo: se o nome do
+ arquivo for 
+\shape italic
+grafico.png
+\shape default
+, o usuário deve digitar apenas 
+\shape italic
+grafico
+\shape default
+).
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por obter maiores informações sobre o programa (opção
+ 8), o programa irá descrever os principais recursos fornecidos, assim como
+ informar de maneira breve como os parâmetros são calculados.
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário opte por sair do programa (opção 9), o software será encerrado.
+\end_layout
+
+\begin_layout Enumerate
+Caso o usuário digite uma opção que não corresponda as sugeridas em quaisquer
+ que sejam os menus, uma mensagem de erro aparecerá e o usuário terá que
+ fazer uma nova escolha.
+\end_layout
+
+\begin_layout Section
+Documentação para desenvolvedor
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção a documentação para o desenvolvedor, isto é, informaçõe
+s para usuários que queiram modificar, aperfeiçoar ou ampliar este software.
+\end_layout
+
+\begin_layout Subsection
+Dependências
+\end_layout
+
+\begin_layout Standard
+Para compilar o software é necessário atender as seguintes dependências:
+\end_layout
+
+\begin_layout Itemize
+No sistema operacional GNU/Linux:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar o compilador g++ da GNU disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.gnuplot.info/"
+target "http://www.gnuplot.info/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Para instalar no GNU/Linux use o comando 
+\family typewriter
+yum install gcc
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No sistema operacional Windows
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar um compilador apropriado.
+\end_layout
+
+\begin_layout Itemize
+Por ter sido testado, recomenda-se o Dev C++ disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http: //dev-c.softonic.com.br/"
+target "http: //dev-c.softonic.com.br/"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No sistema operacional Mac
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar um compilador apropriado.
+\end_layout
+
+\begin_layout Itemize
+Recomenda-se o Xcode disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://developer.apple.com/xcode/"
+target "https://developer.apple.com/xcode/"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O software Gnuplot deve ser instalado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Biblioteca CGnuplot: Os arquivos para acesso a biblioteca CGnuplot encontram-se
+ no diretório com os códigos do software;
+\end_layout
+
+\begin_layout Itemize
+O software 
+\family typewriter
+gnuplot
+\family default
+, disponível no endereço 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.gnuplot.info/"
+literal "false"
+
+\end_inset
+
+, deve estar instalado.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O programa depende da existência de arquivo de dados no formato 
+\shape italic
+.dat
+\shape default
+ para preencher os parâmetros de entrada, caso o usuário opte pela entrada
+ de dados por um arquivo de disco.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquivo-input.dat-usado"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ exemplifica a ordem em que os parâmetros devem estar para uma leitura correta
+ dos dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste9.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo 
+\shape italic
+input.dat
+\shape default
+ usado para a entrada de dados pelo arquivo de disco mostrando a ordem dos
+ parâmetros 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arquivo-input.dat-usado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Como gerar a documentação usando doxygen
+\end_layout
+
+\begin_layout Standard
+A documentação do código do software foi feita usando o padrão JAVADOC.
+ Depois de documentação do código, software 
+\family typewriter
+doxygen 
+\family default
+foi usado para gerar a documentação do desenvolvedor no formato html.
+ O software 
+\family typewriter
+doxygen
+\family default
+ lê os arquivos com os códigos (*.h e *.cpp) e gera uma documentação muito
+ útil e de fácil navegação no formato html.
+ 
+\end_layout
+
+\begin_layout Itemize
+Veja informações sobre uso do formato JAVADOC em:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Veja informações sobre o software 
+\family typewriter
+doxygen
+\family default
+ em
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.stack.nl/~dimitri/doxygen/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Apresenta-se a seguir algumas imagens com as telas das saídas geradas pelo
+ software 
+\family typewriter
+doxygen
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/Doxygen1.PNG
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação do código usando o software 
+\shape italic
+doxygen
+\shape default
+ mostrando a lista de classes do programa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/Doxygen2.PNG
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação do código usando o software 
+\shape italic
+doxygen
+\shape default
+ mostrando a lista de arquivos do programa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/Doxygen3.PNG
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação do código usando o software 
+\shape italic
+doxygen
+\shape default
+ mostrando a declaração da classe CSimuladorCurvasIPR.h
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

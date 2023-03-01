@@ -1,0 +1,1503 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Teste} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo projeto de engenharia passa por uma etapa de testes.
+ Neste capítulo apresentamos alguns testes do software desenvolvido.
+ Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
+ apresentados (diagramas de caso de uso geral e específicos).
+\end_layout
+
+\begin_layout Section
+Teste 1: Entrada de dados pelo teclado
+\end_layout
+
+\begin_layout Standard
+Neste primeiro teste, foi escolhido a entrada de dados pelo teclado (Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), onde o usuário deverá digitar os dados solicitados.
+ O teste foi realizado para os regimes transiente (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), pseudopermanente (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) e permanente (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Vale ressaltar que a quantidade de parâmetros exigida para o regime transiente
+ é maior, sendo a entrada de dados mais extensa comparada aos outros dois
+ regimes.
+ Destaca-se ainda que os testes foram realizados usando-se valores iguais
+ para um mesmo parâmetro com intuito de demonstrar que a estimativa do efeito
+ de película não depende do regime selecionado (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Entretanto, observa-se mudança na vazão de fundo uma vez que a solução
+ da E.D.H.
+ é diferente para cada regime.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste1.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o menu de inicialização e a entrada de dados
+ pelo teclado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste3.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a entrada de dados pelo teclado para o regime
+ transiente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste5.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a entrada de dados pelo teclado para o regime
+ pseudopermanente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste7.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a entrada de dados pelo teclado para o regime
+ permanente
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste4.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o resulto do efeito de película e da vazão de
+ fundo para o regime transiente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste6.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o resulto do efeito de película e da vazão de
+ fundo para o regime pseudopermanente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste8.png
+	lyxscale 90
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o resulto do efeito de película e da vazão de
+ fundo para o regime permanente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 2: Entrada de dados por aquivo de disco
+\end_layout
+
+\begin_layout Standard
+No segundo teste, foi escolhido a entrada de dados por arquivo de disco,
+ onde o usuário deverá informar o nome do arquivo em que os dados se encontram.
+ No exemplo mostrando abaixo, foi criado o arquivo 
+\shape italic
+input.dat 
+\shape default
+(Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ O programa inicialmente lê o arquivo e mostra os valores que estão sendo
+ atribuídos a cada parâmetro para que o usuário possa verificar e confirmar
+ se os dados de entrada estão corretos (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ A saída de dados é mostrada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura10"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste9.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo 
+\shape italic
+input.dat
+\shape default
+ usado para a entrada de dados pelo arquivo de disco 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura8"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste11.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dados carregados do arquivo de disco 
+\shape italic
+input.dat
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura9"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste12.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o resultado do efeito de película e da vazão
+ de fundo usando dados carregados pelo arquivo de disco 
+\shape italic
+input.dat
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 3: Visualizar dados de arquivo de disco
+\end_layout
+
+\begin_layout Standard
+No teste 3, foi escolhido visualizar dados de arquivo de disco, onde o usuário
+ poderá verificar o conteúdo do arquivo de dentro do programa, antes de
+ utilizá-lo.
+ Neste caso, o usuário poderá visualizar arquivo com dados de entrada, como
+ o arquivo 
+\shape italic
+input.dat 
+\shape default
+, ou um arquivo com dados de pressão e vazão como o mostrado a seguir (Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura11"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ No exemplo abaixo, foi utilizado o arquivo 
+\shape italic
+dadosIPR.dat 
+\shape default
+(Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura12"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) contendo dados de pressão e vazão considerando skin nulo e não-nulo.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura13"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra a tela do programa com o conteúdo do arquivo 
+\shape italic
+dadosIPR.dat
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste13.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o usuário informando o arquivo 
+\shape italic
+dadosIPR.dat
+\shape default
+ para visualização 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura11"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste14.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo de disco 
+\shape italic
+dadosIPR.dat
+\shape default
+ para visualização 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura12"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste15.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o conteúdo do arquivo de disco 
+\shape italic
+dadosIPR.dat
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura13"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 4: Salvar dados em arquivo de disco
+\end_layout
+
+\begin_layout Standard
+No teste 4, foi escolhido a opção de salvar os dados gerados em arquivo
+ de disco (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura14"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Neste exemplo, o arquivo salvo 
+\shape italic
+dadosIPR2
+\shape default
+ recebe os dados de pressão e vazão considerando skin nulo e não-nulo (Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura15"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste16.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a opção de salvar dados em arquivo de disco 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura14"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste17.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo de disco 
+\shape italic
+dadosIPR2
+\shape default
+ salvo na pasta raiz do programa 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura15"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 5: Plotar curvas de IPR
+\end_layout
+
+\begin_layout Standard
+No teste 5, foi escolhido a opção de plotar curvas de IPR a partir dos dados
+ de pressão e vazão calculados pelo programa (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura16"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura17"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra um gráfico gerado a partir do software externo Gnuplot plotando
+ as curvas de IPR para um reservatório em regime permanente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste18.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a opção de plotar curvas de IPR a partir de dados
+ gerados pelo software 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura16"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste19.png
+	lyxscale 80
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Software externo Gnuplot gerando gráfico de curvas de IPR de um reservatório
+ em regime permanente 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura17"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 6: Plotar curvas de IPR de um arquivo de disco
+\end_layout
+
+\begin_layout Standard
+No teste 6, foi escolhido a opção de plotar curvas de IPR a partir de um
+ arquivo de disco contendo dados calculados pelo software.
+ Esta opção é fornecida ao usuário para que o mesmo não precise informar
+ ao programa todos os parâmetros novamente, uma vez que há um arquivo de
+ disco com os dados salvos.
+ O arquivo de disco informado pelo usuário é o arquivo 
+\shape italic
+dadosIPR2.dat
+\shape default
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura18"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura19"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o software externo Gnuplot plotando as curvas de IPR a partir deste
+ arquivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste20.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a opção de plotar curvas de IPR a partir do arquivo
+ de disco 
+\shape italic
+dadosIPR2.dat
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura18"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste19.png
+	lyxscale 80
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Software externo Gnuplot gerando gráfico de curvas de IPR a partir do arquivo
+ de disco 
+\shape italic
+dadosIPR2.dat
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura19"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 7: Salvar gráfico
+\end_layout
+
+\begin_layout Standard
+No teste 7, foi escolhido a opção de salvar o gráfico gerado pelo programa.
+ O usuário deverá informar o nome do arquivo em que deseja salvá-lo, em
+ formato 
+\shape italic
+.png
+\shape default
+.
+ No exemplo abaixo, o nome 
+\shape italic
+curvaIPR
+\shape default
+ é dado ao gráfico gerado pelo Gnuplot (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura21"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra a pasta raiz do programa com o arquivo 
+\shape italic
+curvaIPR.png
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste22.png
+	lyxscale 80
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando a opção de salvar gráfico e nomeando o arquivo
+ como 
+\shape italic
+curvaIPR.png
+\shape default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura20"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste23.png
+	lyxscale 80
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pasta raiz do software mostrando o arquivo 
+\shape italic
+curvaIPR.png
+\shape default
+ (em destaque em vermelho) salvo em disco 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura21"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 8: Informações sobre o programa
+\end_layout
+
+\begin_layout Standard
+No teste 8, foi escolhido a opção de obter maiores informações sobre o programa.
+ O intuito desta opção é informar a um usuário leigo no programa os recursos
+ fornecidos pelo software, assim como esclarecer como os parâmetros são
+ calculados (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura22"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Documents/LENEP/Aulas/Programação Orientada ao Objeto C++/Progamação Prática/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Cap. 7 - Imagens/teste24.png
+	lyxscale 80
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando maiores informações ao usuário sobre os recursos
+ oferecidos 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura22"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

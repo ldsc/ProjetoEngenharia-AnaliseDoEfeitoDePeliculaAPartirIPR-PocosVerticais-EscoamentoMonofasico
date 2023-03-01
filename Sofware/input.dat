@@ -1,0 +1,18 @@
+3000        // Pi(psi) - pressao inicial
+2500        // Pwf(psi) - pressao final
+50          // DeltaP(psi) - variacao de pressao
+1000        // re(ft) - raio do reservatorio
+0.4         // rw(ft) - raio do poco
+1.4         // rs(ft) - raio da zona atingida
+25          // theta (graus) - inclinacao do poco
+80          // h(ft) - espessura do reservatorio
+40          // hp(ft) - espessura da zona canhoneada
+0           // h1(ft) - espessura da zona perfurada e nao-canhoneada
+20          // kh(mD) - permeabilidade horizontal
+20          // kv(mD) - permeabilidade vertical
+2           // ks(mD) - permeabilidade da zona alterada
+1.25        // B(bbl/STB) - fator volume-formacao
+2.5         // mi(cp) - viscosidade
+0.2         // phi - porosidade
+0.000013    // ct(1/psi) - compressibilidade total
+200         // t(hr) - tempo de producao
