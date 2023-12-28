@@ -1,32 +1,35 @@
 
 # Table of Contents
 
-1.  [Nome do Software (ou Biblioteca):](#org8bbfb2c)
-2.  [Resumo e/ou informação extra:](#org8e2ea2d)
-3.  [Versão:](#org76d9c72)
-4.  [Data:](#org6ecebb5)
-5.  [Autor de Contato:](#org9627dd3)
-6.  [Lista dos Autores:](#orgcda077b)
-7.  [Áreas de pesquisa vinculadas:](#orgacce6a4)
-8.  [Vinculo com:](#org9a4e00f)
-9.  [Paradigmas:](#orgcc134d1)
-10. [Tipo de Interface:](#orgbe44db9)
-11. [Plataformas Suportadas:](#orgcf6b200)
-12. [Linguagens Utilizadas:](#org356da44)
-13. [Bibliotecas Utilizadas (dependências):](#orge8e63ac)
-14. [Softwares utilizados (dependências)](#org00d684d)
-15. [Tipo de Licença:](#org887879b)
-16. [Links:](#orgdff11f8)
+1.  [Nome do Software (ou Biblioteca):](#org9a28923)
+2.  [Resumo e/ou informação extra:](#org1305875)
+3.  [Versão:](#org7d4175e)
+4.  [Data:](#orgfae4ece)
+5.  [Autor de Contato:](#orgab1a860)
+6.  [Lista dos Autores:](#org8fdf278)
+7.  [Áreas de pesquisa vinculadas:](#org0cdf77b)
+8.  [Vinculo com:](#org2f5bd65)
+9.  [Paradigmas:](#orgbf3911a)
+10. [Tipo de Interface:](#org4d07546)
+11. [Plataformas Suportadas:](#orgdec94fd)
+12. [Linguagens Utilizadas:](#org2e6b7f4)
+13. [Bibliotecas Utilizadas (dependências):](#orgba047c4)
+14. [Softwares utilizados (dependências)](#org3da2f71)
+15. [Tipo de Licença:](#org6b101a6)
+16. [Vinculo com:](#orgdeb2c2c)
+17. [Links:](#org3efff9b)
+18. [Todo](#org482d761)
+    1.  [A primeira atividade a ser desenvolvida é converter a estrutura de diretórios para o novo formato.](#orgbbbe72c)
 
 
-<a id="org8bbfb2c"></a>
+<a id="org9a28923"></a>
 
 # Nome do Software (ou Biblioteca):
 
 -   ANÁLISE DO EFEITO DE PELÍCULA A PARTIR DE CURVAS DE ÍNDICE DE PRODUTIVIDADE (IPR) PARA POÇOS VERTICAIS EM ESCOAMENTO MONOFÁSICO DE ÓLEO
 
 
-<a id="org8e2ea2d"></a>
+<a id="org1305875"></a>
 
 # Resumo e/ou informação extra:
 
@@ -38,28 +41,28 @@ partir de soluções analı́ticas da E.D.H. considerando regime transiente, pse
 dopermanente e permanente a partir do software externo Gnuplot.
 
 
-<a id="org76d9c72"></a>
+<a id="org7d4175e"></a>
 
 # Versão:
 
 -   1.0.
 
 
-<a id="org6ecebb5"></a>
+<a id="orgfae4ece"></a>
 
 # Data:
 
 -   2013/2 - segundo semestre.
 
 
-<a id="org9627dd3"></a>
+<a id="orgab1a860"></a>
 
 # Autor de Contato:
 
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
-<a id="orgcda077b"></a>
+<a id="org8fdf278"></a>
 
 # Lista dos Autores:
 
@@ -67,7 +70,7 @@ dopermanente e permanente a partir do software externo Gnuplot.
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
-<a id="orgacce6a4"></a>
+<a id="org0cdf77b"></a>
 
 # Áreas de pesquisa vinculadas:
 
@@ -76,56 +79,56 @@ dopermanente e permanente a partir do software externo Gnuplot.
 -   IPR (Inflow Performance Relationship)
 
 
-<a id="org9a4e00f"></a>
+<a id="org2f5bd65"></a>
 
 # Vinculo com:
 
 -   Trabalho da disciplina de programação prática.
 
 
-<a id="orgcc134d1"></a>
+<a id="orgbf3911a"></a>
 
 # Paradigmas:
 
 -   POO - Programação Orientada a Objeto (códigos em C++)
 
 
-<a id="orgbe44db9"></a>
+<a id="org4d07546"></a>
 
 # Tipo de Interface:
 
 -   Terminal e gráfica (gnuplot).
 
 
-<a id="orgcf6b200"></a>
+<a id="orgdec94fd"></a>
 
 # Plataformas Suportadas:
 
 -   Windows e GNU/Linux e Mac OS X (não testada).
 
 
-<a id="org356da44"></a>
+<a id="org2e6b7f4"></a>
 
 # Linguagens Utilizadas:
 
 -   C++ 11.
 
 
-<a id="orge8e63ac"></a>
+<a id="orgba047c4"></a>
 
 # Bibliotecas Utilizadas (dependências):
 
 -   CGnuplot - <https://github.com/ldsc/CGnuplot>
 
 
-<a id="org00d684d"></a>
+<a id="org3da2f71"></a>
 
 # Softwares utilizados (dependências)
 
 -   gnuplot <http://www.gnuplot.info/>
 
 
-<a id="org887879b"></a>
+<a id="org6b101a6"></a>
 
 # Tipo de Licença:
 
@@ -138,7 +141,30 @@ dopermanente e permanente a partir do software externo Gnuplot.
 -   Na descrição do projeto informe que trata-se de uma nova versão, que tem como base a versão anterior e DESTAQUE COM CLAREZA E OBJETIVIDADE QUAIS AS NOVIDADES DA NOVA VERSÃO.
 
 
-<a id="orgdff11f8"></a>
+<a id="orgdeb2c2c"></a>
+
+# Vinculo com:
+
+-   A versão 1, desenvolvida pelo Matheus utiliza metodologia antiga, as próximas versões devem usar a metodologia descrita [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
+-   [Trabalho da disciplina Projeto de Software Aplicado à Engenharia](https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado).
+-   Uma lista de outros projetos desenvolvidos no LDSC é disponibilizado [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
+
+
+<a id="org3efff9b"></a>
 
 # Links:
+
+-   [Site do Professor André Duarte Bueno](https://sites.google.com/view/professorandreduartebueno/).
+-   [Site do LDSC no github](https://github.com/ldsc).
+-   [Site do LENEP](https://uenf.br/cct/lenep).
+
+
+<a id="org482d761"></a>
+
+# Todo
+
+
+<a id="orgbbbe72c"></a>
+
+## A primeira atividade a ser desenvolvida é converter a estrutura de diretórios para o novo formato.
 
